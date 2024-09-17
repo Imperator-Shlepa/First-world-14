@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken form S.P.L.U.R.T-Station-13 - https://github.com/SPLURT-Station/S.P.L.U.R.T-Station-13/blob/master/modular_splurt/icons/mob/robots.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "missm_sd",
+      "directions": 4
+    },
+    {
+      "name": "missm_sd_e",
+      "directions": 4
+    },
+    {
+      "name": "missm_sd_e_r",
+      "directions": 4
+    },
+    {
+      "name": "missm_sd_l",
+      "directions": 4
+    },
+    {
+      "name": "missm_eng",
+      "directions": 4
+    },
+    {
+      "name": "missm_eng_e",
+      "directions": 4
+    },
+    {
+      "name": "missm_eng_e_r",
+      "directions": 4
+    },
+    {
+      "name": "missm_eng_l",
+      "directions": 4
+    },
+    {
+      "name": "missm_janitor",
+      "directions": 4
+    },
+    {
+      "name": "missm_janitor_e",
+      "directions": 4
+    },
+    {
+      "name": "missm_janitor_e_r",
+      "directions": 4
+    },
+    {
+      "name": "missm_janitor_l",
+      "directions": 4
+    },
+    {
+      "name": "missm_med",
+      "directions": 4
+    },
+    {
+      "name": "missm_med_e",
+      "directions": 4
+    },
+    {
+      "name": "missm_med_e_r",
+      "directions": 4
+    },
+    {
+      "name": "missm_med_l",
+      "directions": 4
+    }
+  ]
+}

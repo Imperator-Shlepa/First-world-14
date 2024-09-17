@@ -1,0 +1,461 @@
+
+##################### Для боргов M.E.K.K.A #####################
+- type: entity
+  id: BaseBorgChassisKawaiiMEKKA
+  parent: [BaseBorgChassis, BaseBorgTransponder]
+  abstract: true
+  components:
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4.5
+    baseSprintSpeed : 6.5
+  - type: Sprite
+    sprite: _FirstWorld/robots/meka.rsi
+  - type: NpcFactionMember
+    factions:
+    - NanoTrasen
+  - type: Access
+    enabled: false
+    groups:
+    - AllAccess
+  - type: AccessReader
+    access: [["Command"], ["Research"]]
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
+
+- type: entity
+  id: BaseBorgChassisSyndicateKawaiiMEKKA
+  parent: BaseBorgChassis
+  abstract: true
+  components:
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4.5
+    baseSprintSpeed : 6.5
+  - type: Sprite
+    sprite: _FirstWorld/robots/meka.rsi
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: Access
+    tags:
+    - NuclearOperative
+    - SyndicateAgent
+  - type: AccessReader
+    access: [["SyndicateAgent"], ["NuclearOperative"]]
+  - type: SiliconLawProvider
+    laws: SyndicateStatic
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Binary
+    - Syndicate
+  - type: ActiveRadio
+    channels:
+    - Syndicate
+  - type: ShowSyndicateIcons
+  - type: MovementAlwaysTouching
+  - type: Speech
+    speechSounds: SyndieBorg
+  - type: Vocal
+    sounds:
+      Unsexed: UnisexSiliconSyndicate
+  - type: PointLight
+    color: "#dd200b"
+
+########################################
+
+###########Для боргов Мисс##############
+
+- type: entity
+  id: BaseBorgChassisKawaiiMiss
+  parent: [BaseBorgChassis, BaseBorgTransponder]
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _FirstWorld/robots/robomiss.rsi
+  - type: NpcFactionMember
+    factions:
+    - NanoTrasen
+  - type: Access
+    enabled: false
+    groups:
+    - AllAccess
+  - type: AccessReader
+    access: [["Command"], ["Research"]]
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
+
+########################################
+
+###########Для боргов Мейдо##############
+
+- type: entity
+  id: BaseBorgChassisKawaiiMaid
+  parent: [BaseBorgChassis, BaseBorgTransponder]
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _FirstWorld/robots/robomaid.rsi
+  - type: NpcFactionMember
+    factions:
+    - NanoTrasen
+  - type: Access
+    enabled: false
+    groups:
+    - AllAccess
+  - type: AccessReader
+    access: [["Command"], ["Research"]]
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
+
+#############################################################################################
+#############################################################################################
+#############################################################################################
+
+################ МЕККИ ############################################
+
+- type: entity
+  id: MEKKAChassisMining
+  parent: BaseBorgChassisKawaiiMEKKA
+  name: М.Е.К.К.А утилизатор
+  components:
+  - type: Sprite
+    layers:
+    - state: fmekamine
+    - state: fmekamine_e_r
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: fmekamine_l
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: BorgChassis
+    maxModules: 4 #колличество модулей
+    moduleWhitelist:
+      tags: #модули которые можно вставить
+      - BorgModuleGeneric
+      - MEKKAModuleCargo
+    hasMindState: fmekamine_e
+    noMindState: fmekamine_e_r
+  - type: BorgTransponder
+    sprite:
+      sprite: _FirstWorld/robots/meka.rsi
+      state: fmekamine
+    name: М.Е.К.К.А утилизатор
+  - type: Construction
+    node: mining
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Supply
+    - Binary
+    - Common
+    - Science
+  - type: ActiveRadio
+    channels:
+    - Supply
+    - Binary
+    - Common
+    - Science
+  - type: AccessReader
+    access: [["Cargo"], ["Salvage"], ["Command"], ["Research"]]
+  - type: Inventory
+    templateId: borgTall
+  - type: InteractionPopup
+    interactSuccessString: petting-success-salvage-cyborg
+    interactFailureString: petting-failure-salvage-cyborg
+    interactSuccessSound:
+      path: /Audio/Ambience/Objects/periodic_beep.ogg
+
+
+- type: entity
+  id: MEKKAChassisJanitor
+  parent: BaseBorgChassisKawaiiMEKKA
+  name: М.Е.К.К.А уборщик
+  components:
+  - type: Sprite
+    layers:
+    - state: fmekajani
+    - state: fmekajani_e_r
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: fmekajani_l
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: BorgChassis
+    maxModules: 4
+    moduleWhitelist:
+      tags:
+      - BorgModuleGeneric
+      - MEKKAModuleJanitor
+    hasMindState: fmekajani_e
+    noMindState: fmekajani_e_r
+  - type: BorgTransponder
+    sprite:
+      sprite: _FirstWorld/robots/meka.rsi
+      state: fmekajani
+    name: М.Е.К.К.А уборщик
+  - type: Construction
+    node: janitor
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Service
+    - Binary
+    - Common
+    - Science
+  - type: ActiveRadio
+    channels:
+    - Service
+    - Binary
+    - Common
+    - Science
+  - type: AccessReader
+    access: [["Service"], ["Command"], ["Research"]]
+  - type: Inventory
+    templateId: borgShort
+  - type: InteractionPopup
+    interactSuccessString: petting-success-janitor-cyborg
+    interactFailureString: petting-failure-janitor-cyborg
+    interactSuccessSound:
+      path: /Audio/Ambience/Objects/periodic_beep.ogg
+
+
+- type: entity
+  id: MEKKAChassisMedical
+  parent: [BaseBorgChassisKawaiiMEKKA, ShowMedicalIcons]
+  name: Медсестра М.Е.К.К.А
+  components:
+  - type: Sprite
+    layers:
+    - state: mekamed
+    - state: mekamed_e_r
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: mekamed_l
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: BorgChassis
+    maxModules: 4
+    moduleWhitelist:
+      tags:
+      - BorgModuleGeneric
+      - MEKKAModuleMedical
+    hasMindState: mekamed_e
+    noMindState: mekamed_e_r
+  - type: BorgTransponder
+    sprite:
+      sprite: _FirstWorld/robots/meka.rsi
+      state: mekamed
+    name: Медсестра М.Е.К.К.А
+  - type: Construction
+    node: medical
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Medical
+    - Binary
+    - Common
+    - Science
+  - type: ActiveRadio
+    channels:
+    - Medical
+    - Binary
+    - Common
+    - Science
+  - type: AccessReader
+    access: [["Medical"], ["Command"], ["Research"]]
+  - type: Inventory
+    templateId: borgDutch
+  - type: SolutionScanner
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepHoverBorg
+  - type: InteractionPopup
+    interactSuccessString: petting-success-medical-cyborg
+    interactFailureString: petting-failure-medical-cyborg
+    interactSuccessSound:
+      path: /Audio/Ambience/Objects/periodic_beep.ogg
+
+
+- type: entity
+  id: MEKKAChassisService
+  parent: BaseBorgChassisKawaiiMEKKA
+  name: Сервисная М.Е.К.К.А
+  components:
+  - type: Sprite
+    layers:
+    - state: fmekaserv
+    - state: fmekaserv_e_r
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: fmekaserv_l
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: BorgChassis
+    maxModules: 4
+    moduleWhitelist:
+      tags:
+      - BorgModuleGeneric
+      - MEKKAModuleService
+    hasMindState: fmekaserv_e
+    noMindState: fmekaserv_e_r
+  - type: BorgTransponder
+    sprite:
+      sprite: _FirstWorld/robots/meka.rsi
+      state: fmekaserv
+    name: Сервисная М.Е.К.К.А
+  - type: Construction
+    node: service
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Service
+    - Binary
+    - Common
+    - Science
+  - type: ActiveRadio
+    channels:
+    - Service
+    - Binary
+    - Common
+    - Science
+  - type: AccessReader
+    access: [["Service"], ["Command"], ["Research"]]
+  - type: Inventory
+    templateId: borgTall
+  - type: InteractionPopup
+    interactSuccessString: petting-success-service-cyborg
+    interactFailureString: petting-failure-service-cyborg
+    interactSuccessSound:
+      path: /Audio/Ambience/Objects/periodic_beep.ogg
+
+
+- type: entity
+  id: MEKKAChassisEngineer
+  parent: BaseBorgChassisKawaiiMEKKA
+  name: Инженерная М.Е.К.К.А
+  components:
+  - type: Sprite
+    layers:
+    - state: fmekaeng
+    - state: fmekaeng_e_r
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: fmekaeng_l
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: BorgChassis
+    maxModules: 4
+    moduleWhitelist:
+      tags:
+      - BorgModuleGeneric
+      - MEKKAModuleEngineering
+    hasMindState: engineer_e
+    noMindState: engineer_e_r
+  - type: BorgTransponder
+    sprite:
+      sprite: _FirstWorld/robots/meka.rsi
+      state: fmekaeng
+    name: Инженерная М.Е.К.К.А
+  - type: Construction
+    node: engineer
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Engineering
+    - Binary
+    - Common
+    - Science
+  - type: ActiveRadio
+    channels:
+    - Engineering
+    - Binary
+    - Common
+    - Science
+  - type: AccessReader
+    access: [["Engineering"], ["Command"], ["Research"]]
+  - type: Inventory
+    templateId: borgShort
+  - type: InteractionPopup
+    interactSuccessString: petting-success-engineer-cyborg
+    interactFailureString: petting-failure-engineer-cyborg
+    interactSuccessSound:
+      path: /Audio/Ambience/Objects/periodic_beep.ogg
+
+
+- type: entity
+  id: MEKKAChassisSyndicateAssault
+  parent: BaseBorgChassisSyndicateKawaiiMEKKA
+  name: Штурмовой М.Е.К.К.А синдиката
+  description: Если в двух словах, то вам пизда.
+  components:
+    - type: Sprite
+      layers:
+        - state: mmekasyndi
+        - state: mmekasyndi_e
+          map: ["enum.BorgVisualLayers.Light"]
+          shader: unshaded
+          visible: false
+        - state: mmekasyndi_l
+          shader: unshaded
+          map: ["light"]
+          visible: false
+    - type: BorgChassis
+      maxModules: 3
+      moduleWhitelist:
+        tags:
+          - BorgModuleGeneric
+          - MEKKAModuleSyndicate
+          - MEKKAModuleSyndicateAssault
+      hasMindState: mmekasyndi_e
+      noMindState: mmekasyndi
+    - type: Construction
+      node: syndicateassault
+    - type: InteractionPopup
+      interactSuccessString: petting-success-syndicate-cyborg
+      interactFailureString: petting-failure-syndicate-cyborg
+      interactSuccessSound:
+        path: /Audio/Ambience/Objects/periodic_beep.ogg
+
+
+- type: entity
+  id: MEKKAChassisSyndicateSaboteur
+  parent: BaseBorgChassisSyndicateKawaiiMEKKA
+  name: Саботажная М.Е.К.К.А
+  description: Быстрый убийца.
+  components:
+    - type: Sprite
+      layers:
+        - state: fmekasyndi
+        - state: fmekasyndi_e
+          map: ["enum.BorgVisualLayers.Light"]
+          shader: unshaded
+          visible: false
+        - state: fmekasyndi_l
+          shader: unshaded
+          map: ["light"]
+          visible: false
+    - type: BorgChassis
+      maxModules: 3
+      moduleWhitelist:
+        tags:
+          - BorgModuleGeneric
+          - MEKKAModuleEngineering
+          - MEKKAModuleSyndicate
+          - MEKKAModuleSyndicateAssault
+      hasMindState: fmekasyndi_e
+      noMindState: fmekasyndi
+    - type: Construction
+      node: syndicatesaboteur
+    - type: ShowHealthBars
+      damageContainers:
+      - Inorganic
+      - Silicon
+    - type: InteractionPopup
+      interactSuccessString: petting-success-syndicate-cyborg
+      interactFailureString: petting-failure-syndicate-cyborg
+      interactSuccessSound:
+        path: /Audio/Ambience/Objects/periodic_beep.ogg

@@ -1,0 +1,162 @@
+- type: entity
+  id: BaseBorgModuleMEKKA
+  parent: BaseItem
+  name: M.E.K.K.A module
+  description: NO! THIS IS NOT SOLID SNAKE!
+  abstract: true
+  components:
+  - type: Item
+    storedRotation: -90
+  - type: Sprite
+    sprite: _FirstWorld/robots/mekamodules.rsi
+  - type: BorgModule
+  - type: StaticPrice
+    price: 100
+  - type: Tag
+    tags:
+    - BorgModuleGeneric
+  - type: GuideHelp
+    guides:
+    - Cyborgs
+    - Robotics
+
+- type: entity
+  id: BaseMEKKAModuleCargo
+  parent: BaseBorgModuleMEKKA
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - MEKKAModuleCargo
+
+- type: entity
+  id: BaseMEKKAModuleEngineering
+  parent: BaseBorgModuleMEKKA
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - MEKKAModuleEngineering
+
+- type: entity
+  id: BaseMEKKAModuleJanitor
+  parent: BaseBorgModuleMEKKA
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - MEKKAModuleJanitor
+
+- type: entity
+  id: BaseMEKKAModuleMedical
+  parent: BaseBorgModuleMEKKA
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - MEKKAModuleMedical
+
+- type: entity
+  id: BaseMEKKAModuleService
+  parent: BaseBorgModuleMEKKA
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - MEKKAModuleService
+
+- type: entity
+  id: BaseMEKKAModuleSyndicate
+  parent: BaseBorgModuleMEKKA
+  abstract: true
+  components:
+    - type: Tag
+      tags:
+        - MEKKAModuleSyndicate
+
+- type: entity
+  id: BaseMEKKAModuleSyndicateAssault
+  parent: BaseBorgModuleMEKKA
+  abstract: true
+  components:
+    - type: Tag
+      tags:
+        - MEKKAModuleSyndicateAssault
+
+
+############################################################## да пизда
+
+- type: entity
+  id: MEKKAModuleFireExtinguisher
+  parent: [ BaseBorgModuleMEKKA, BaseProviderBorgModule ]
+  name: fire extinguisher cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: mekka_module
+    - state: module_icon_firext
+  - type: ItemBorgModule
+    items:
+    - FireExtinguisher
+
+- type: entity
+  id: MEKKAModuleGPS
+  parent: [ BaseBorgModuleMEKKA, BaseProviderBorgModule ]
+  name: GPS cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: mekka_module
+    - state: module_icon_gps
+  - type: ItemBorgModule
+    items:
+    - HandheldGPSBasic
+    - HandHeldMassScannerBorg
+    - HandheldStationMapUnpowered
+
+- type: entity
+  id: MEKKAModuleAdvancedCleaning
+  parent: [ BaseMEKKAModuleJanitor, BaseProviderBorgModule ]
+  name: advanced cleaning cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: mekka_module
+    - state: module_icon_janitor
+  - type: ItemBorgModule
+    items:
+    - AdvMopItem
+    - HoloprojectorBorg
+    - SprayBottleSpaceCleaner
+    - Dropper
+    - TrashBag
+
+- type: entity
+  id: MEKKAModuleLightReplacer
+  parent: [ BaseMEKKAModuleJanitor, BaseProviderBorgModule ]
+  name: light replacer cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: mekka_module
+    - state: module_icon_light
+  - type: ItemBorgModule
+    items:
+    - LightReplacer
+    - Crowbar
+    - Screwdriver
+
+- type: entity
+  id: MEKKAModuleMusique
+  parent: [ BaseMEKKAModuleService, BaseProviderBorgModule ]
+  name: musique cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: mekka_module
+    - state: module_icon_music
+  - type: ItemBorgModule
+    items:
+    - SynthesizerInstrument
+    - ElectricGuitarInstrument
+    - SaxophoneInstrument

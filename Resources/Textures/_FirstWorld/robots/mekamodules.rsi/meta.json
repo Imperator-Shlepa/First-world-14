@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "module_icon_trash"
+    },
+    {
+      "name": "mekka_module"
+    },
+    {
+      "name": "module_icon_firext"
+    },
+    {
+      "name": "module_icon_gps"
+    },
+    {
+      "name": "module_icon_janitor"
+    },
+    {
+      "name": "module_icon_light"
+    },
+    {
+      "name": "module_icon_music"
+    },
+    {
+      "name": "module_icon_tools"
+    }
+  ]
+}

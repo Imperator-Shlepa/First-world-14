@@ -1,0 +1,984 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from S.P.L.U.R.T-Station-13 - https://github.com/SPLURT-Station/S.P.L.U.R.T-Station-13/blob/master/modular_splurt/icons/mob/robots_32x64.dmi",
+  "size": {
+    "x": 32,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "ov-opencover \u002Bw",
+      "directions": 4
+    },
+    {
+      "name": "ov-opencover -c",
+      "directions": 4
+    },
+    {
+      "name": "ov-opencover \u002Bc",
+      "directions": 4
+    },
+    {
+      "name": "mekapeace",
+      "directions": 4
+    },
+    {
+      "name": "mekapeace-rest",
+      "directions": 4,
+      "delays": [
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mekapeace-bellyup",
+      "directions": 4,
+      "delays": [
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mekapeace-sit",
+      "delays": [
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mekapeace-wreck",
+      "delays": [
+        [
+          0.5,
+          0.1,
+          0.1,
+          0.1,
+          5,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mekapeace_e",
+      "directions": 4,
+      "delays": [
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mekapeace_l",
+      "directions": 4,
+      "delays": [
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mekapeace_e_r",
+      "directions": 4,
+      "delays": [
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "fmekacargo",
+      "directions": 4
+    },
+    {
+      "name": "fmekacargo-rest",
+      "directions": 4
+    },
+    {
+      "name": "fmekacargo-bellyup",
+      "directions": 4
+    },
+    {
+      "name": "fmekacargo-sit"
+    },
+    {
+      "name": "fmekacargo-wreck"
+    },
+    {
+      "name": "fmekacargo_e",
+      "directions": 4
+    },
+    {
+      "name": "fmekacargo_l",
+      "directions": 4
+    },
+    {
+      "name": "fmekacargo_e_r",
+      "directions": 4
+    },
+    {
+      "name": "fmekajani",
+      "directions": 4
+    },
+    {
+      "name": "fmekajani-rest",
+      "directions": 4
+    },
+    {
+      "name": "fmekajani-bellyup",
+      "directions": 4
+    },
+    {
+      "name": "fmekajani-sit"
+    },
+    {
+      "name": "fmekajani-wreck"
+    },
+    {
+      "name": "fmekajani_e",
+      "directions": 4
+    },
+    {
+      "name": "fmekajani_l",
+      "directions": 4
+    },
+    {
+      "name": "fmekajani_e_r",
+      "directions": 4
+    },
+    {
+      "name": "mekamed",
+      "directions": 4,
+      "delays": [
+        [
+          6.4,
+          0.1,
+          0.2,
+          0.3
+        ],
+        [
+          6.4,
+          0.1,
+          0.2,
+          0.3
+        ],
+        [
+          6.4,
+          0.1,
+          0.2,
+          0.3
+        ],
+        [
+          6.4,
+          0.1,
+          0.2,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "mekamed-rest",
+      "directions": 4,
+      "delays": [
+        [
+          5,
+          0.1,
+          0.5,
+          0.1,
+          0.7,
+          0.1,
+          0.2,
+          0.3
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1,
+          0.7,
+          0.1,
+          0.2,
+          0.3
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1,
+          0.7,
+          0.1,
+          0.2,
+          0.3
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1,
+          0.7,
+          0.1,
+          0.2,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "mekamed-bellyup",
+      "directions": 4,
+      "delays": [
+        [
+          5,
+          0.1,
+          0.5,
+          0.1,
+          0.7,
+          0.1,
+          0.2,
+          0.3
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1,
+          0.7,
+          0.1,
+          0.2,
+          0.3
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1,
+          0.7,
+          0.1,
+          0.2,
+          0.3
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1,
+          0.7,
+          0.1,
+          0.2,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "mekamed-sit",
+      "directions": 4,
+      "delays": [
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mekamed-wreck",
+      "delays": [
+        [
+          0.5,
+          0.1,
+          0.1,
+          0.1,
+          5,
+          0.1,
+          0.25,
+          0.1,
+          0.1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "mekamed_l",
+      "directions": 4,
+      "delays": [
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mekamed_e_r",
+      "directions": 4,
+      "delays": [
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mekamed_e",
+      "directions": 4,
+      "delays": [
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mmekamed",
+      "directions": 4
+    },
+    {
+      "name": "mmekamed-rest",
+      "directions": 4
+    },
+    {
+      "name": "mmekamed-bellyup",
+      "directions": 4
+    },
+    {
+      "name": "mmekamed-sit"
+    },
+    {
+      "name": "mmekamed-wreck"
+    },
+    {
+      "name": "mmekamed_e",
+      "directions": 4
+    },
+    {
+      "name": "mmekamed_l",
+      "directions": 4
+    },
+    {
+      "name": "mmekamed_e_r",
+      "directions": 4
+    },
+    {
+      "name": "fmekamine",
+      "directions": 4
+    },
+    {
+      "name": "fmekamine-rest",
+      "directions": 4
+    },
+    {
+      "name": "fmekamine-bellyup",
+      "directions": 4
+    },
+    {
+      "name": "fmekamine-sit"
+    },
+    {
+      "name": "fmekamine-wreck"
+    },
+    {
+      "name": "fmekamine_e",
+      "directions": 4
+    },
+    {
+      "name": "fmekamine_l",
+      "directions": 4
+    },
+    {
+      "name": "fmekamine_e_r",
+      "directions": 4
+    },
+    {
+      "name": "mekaserve",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mekaserve-rest",
+      "directions": 4,
+      "delays": [
+        [
+          5,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mekaserve-bellyup",
+      "directions": 4,
+      "delays": [
+        [
+          5,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mekaserve-sit",
+      "delays": [
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mekaserve-wreck",
+      "delays": [
+        [
+          0.5,
+          0.1,
+          0.1,
+          0.1,
+          5,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mekaserve_e",
+      "directions": 4,
+      "delays": [
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mekaserve_l",
+      "directions": 4,
+      "delays": [
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mekaserve_e_r",
+      "directions": 4,
+      "delays": [
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ],
+        [
+          5,
+          0.1,
+          0.5,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "fmekaserv",
+      "directions": 4
+    },
+    {
+      "name": "fmekaserv-rest",
+      "directions": 4
+    },
+    {
+      "name": "fmekaserv-bellyup",
+      "directions": 4
+    },
+    {
+      "name": "fmekaserv-sit"
+    },
+    {
+      "name": "fmekaserv-wreck"
+    },
+    {
+      "name": "fmekaserv_e",
+      "directions": 4
+    },
+    {
+      "name": "fmekaserv_l",
+      "directions": 4
+    },
+    {
+      "name": "fmekaserv_e_r",
+      "directions": 4
+    },
+    {
+      "name": "fmekaninja",
+      "directions": 4
+    },
+    {
+      "name": "fmekaninja-rest",
+      "directions": 4
+    },
+    {
+      "name": "fmekaninja-bellyup",
+      "directions": 4
+    },
+    {
+      "name": "fmekaninja-sit"
+    },
+    {
+      "name": "fmekaninja-wreck"
+    },
+    {
+      "name": "fmekaninja_e",
+      "directions": 4
+    },
+    {
+      "name": "fmekaninja_l",
+      "directions": 4
+    },
+    {
+      "name": "fmekaninja_e_r",
+      "directions": 4
+    },
+    {
+      "name": "fmekasyndi",
+      "directions": 4
+    },
+    {
+      "name": "fmekasyndi-rest",
+      "directions": 4
+    },
+    {
+      "name": "fmekasyndi-bellyup",
+      "directions": 4
+    },
+    {
+      "name": "fmekasyndi-sit"
+    },
+    {
+      "name": "fmekasyndi-wreck"
+    },
+    {
+      "name": "fmekasyndi_e",
+      "directions": 4
+    },
+    {
+      "name": "fmekasyndi_l",
+      "directions": 4
+    },
+    {
+      "name": "fmekasyndi_e_r",
+      "directions": 4
+    },
+    {
+      "name": "mmekasyndi",
+      "directions": 4
+    },
+    {
+      "name": "mmekasyndi-rest",
+      "directions": 4
+    },
+    {
+      "name": "mmekasyndi-bellyup",
+      "directions": 4
+    },
+    {
+      "name": "mmekasyndi-sit"
+    },
+    {
+      "name": "mmekasyndi-wreck"
+    },
+    {
+      "name": "mmekasyndi_e",
+      "directions": 4
+    },
+    {
+      "name": "mmekasyndi_l",
+      "directions": 4
+    },
+    {
+      "name": "mmekasyndi_e_r",
+      "directions": 4
+    },
+    {
+      "name": "fmekaeng",
+      "directions": 4
+    },
+    {
+      "name": "fmekaeng-rest",
+      "directions": 4
+    },
+    {
+      "name": "fmekaeng-bellyup",
+      "directions": 4
+    },
+    {
+      "name": "fmekaeng-sit"
+    },
+    {
+      "name": "fmekaeng-wreck"
+    },
+    {
+      "name": "fmekaeng_e",
+      "directions": 4
+    },
+    {
+      "name": "fmekaeng_l",
+      "directions": 4
+    },
+    {
+      "name": "fmekaeng_e_r",
+      "directions": 4
+    },
+    {
+      "name": "fmekasec",
+      "directions": 4
+    },
+    {
+      "name": "fmekasec-rest",
+      "directions": 4
+    },
+    {
+      "name": "fmekasec-bellyup",
+      "directions": 4
+    },
+    {
+      "name": "fmekasec-sit"
+    },
+    {
+      "name": "fmekasec-wreck"
+    },
+    {
+      "name": "fmekasec_e",
+      "directions": 4
+    },
+    {
+      "name": "fmekasec_l",
+      "directions": 4
+    },
+    {
+      "name": "fmekasec_e_r",
+      "directions": 4
+    }
+  ]
+}

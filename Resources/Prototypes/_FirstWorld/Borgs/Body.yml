@@ -1,0 +1,11 @@
+- type: body
+  id: BorgArmFlopa
+  name: "BorgArmFlopa"
+  root: hand_1
+  slots:
+    hand_1:
+      part: RightArmBorg
+      connections:
+      - hand_2
+    hand_2:
+      part: RightArmBorg
